@@ -8,7 +8,9 @@ i{
 }
 .header{
     color: white;
-    background-color: black;
+    /* background-color: black; */
+    background-image: url('../images/banner.jpg');
+    background-size: 100%;
     position: relative;
 }
 .searchBar{
@@ -48,6 +50,7 @@ i{
     border-radius: 50%;
     text-align: center;
     align-content: center;
+    color: white;
 }
 .icon i{
     font-size: 35px;
@@ -57,4 +60,8 @@ i{
 }
 .icon:nth-child(2){
    background-color: rgb(255, 77, 0);
+}
+.options a{
+    color: black;
+    text-decoration: none;
 }

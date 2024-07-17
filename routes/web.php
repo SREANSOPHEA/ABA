@@ -23,6 +23,13 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/ABA/transfer',[ABAController::class,'transfer']);
     Route::get('/ABA/payment',[ABAController::class,'payment']);
     Route::get('/ABA/qr',[ABAController::class,'qr']);
+    Route::get('/ABA/deposit',[ABAController::class,'topup']);
+    Route::get('/ABA/withdraw',[ABAController::class,'withdraw']);
+    Route::get('/ABA/deposit/{option}',[ABAController::class,'deposit']);
+    Route::get('/ABA/withdraw/{option}',[ABAController::class,'chooseWithdraw']);
+    Route::get('/ABA/account/{option}',[ABAController::class,'accountRecord']);
     Route::post('/ABA/scan/submit',[ABAController::class,'scanSubmit']);
+    Route::post('/ABA/deposit/{option}/submit',[ABAController::class,'depositSubmit']);
+
 });
 

@@ -17,18 +17,21 @@ document.getElementById('btnSubmitAddAmount').addEventListener('click',function(
 document.addEventListener('click',function(e){
     if(!e.target.id != "reveive"){
         document.getElementById('accounts').style.height = "0";
+        var id = document.getElementById('accounts').getAttribute('data-value');
         if(e.target.id == "khrBTN")  document.getElementById('khAcc').checked = true;
         if(e.target.id == "usdBTN")  document.getElementById('USDAcc').checked = true;
         if(document.getElementById('khAcc').checked == true){
             document.getElementById('dollarAmount').style.display = "none";
             document.getElementById('rielAmount').style.display = "block";
-            document.getElementById('reveive').innerHTML="KHR Account | KHR";
+            document.getElementById('reveive').innerHTML="KHR Account | KHR <i class='bx bx-chevron-down'></i>";
+            document.getElementById('qrcode').src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=riel-"+id+"-0";
 
         }
         if(document.getElementById('USDAcc').checked == true){
             document.getElementById('dollarAmount').style.display = "block";
             document.getElementById('rielAmount').style.display = "none";
-            document.getElementById('reveive').innerHTML="USD Account | USD";
+            document.getElementById('reveive').innerHTML="USD Account | USD <i class='bx bx-chevron-down'></i>";
+            document.getElementById('qrcode').src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=dollar-"+id+"-0";
         }
         
     }

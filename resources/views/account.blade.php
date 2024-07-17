@@ -31,18 +31,26 @@
     </div>
     <div class="row p-5">
         <div class="col-12 p-3 box mb-3" style="line-height: 5px">
-            <h5>Savings</h5>
-            <p>USD Account | savings</p>
-            <div class="text-end">
-                <h4><b>{{number_format($account->dollar)}}</b> USD</h4>
-            </div>
+            <a href="/ABA/account/usd">
+                <div>
+                    <h5>Savings</h5>
+                    <p>USD Account | savings</p>
+                    <div class="text-end">
+                        <h4><b>{{number_format($account->dollar)}}</b> USD</h4>
+                    </div>
+                </div>
+            </a>
         </div>
         <div class="col-12 p-3 box" style="line-height: 5px">
-            <h5>Savings</h5>
-            <p>KHR Account | savings</p>
-            <div class="text-end">
-                <h4><b>{{number_format($account->riel)}}</b> KHR</h4>
+           <a href="/ABA/account/khr">
+            <div>
+                <h5>Savings</h5>
+                <p>KHR Account | savings</p>
+                <div class="text-end">
+                    <h4><b>{{number_format($account->riel)}}</b> KHR</h4>
+                </div>
             </div>
+           </a>
         </div>
     </div>
 </body>

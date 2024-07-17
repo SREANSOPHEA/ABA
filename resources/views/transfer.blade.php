@@ -27,24 +27,28 @@
             </div>
         </div>
     </div>
-    <div class="row p-5">
+    <div class="row p-5 options">
         <div class="col-12 p-2">
-            <div class="box p-3 d-flex gap-3 align-items-center">
-                <div class="icon"><i class='bx bx-plus'></i></div>
-                <div style="line-height: 0">
-                    <h5><b>Deposit Money</b></h5>
-                    <p>Transfer money to other BELTEI Bank customers</p>
+            <a href="/ABA/deposit">
+                <div class="box p-3 d-flex gap-3 align-items-center">
+                    <div class="icon"><i class='bx bx-plus'></i></div>
+                    <div style="line-height: 0">
+                        <h5><b>Deposit Money</b></h5>
+                        <p>Transfer money to other BELTEI Bank customers</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         <div class="col-12 p-2">
-            <div class="box p-3 d-flex gap-3 align-items-center">
-                <div class="icon"><i class='bx bx-minus' ></i></div>
-                <div style="line-height: 0">
-                    <h5><b>Withdraw Money</b></h5>
-                    <p>Transfer money to other BELTEI Bank customers</p>
+            <a href="/ABA/withdraw">
+                <div class="box p-3 d-flex gap-3 align-items-center">
+                    <div class="icon"><i class='bx bx-minus' ></i></div>
+                    <div style="line-height: 0">
+                        <h5><b>Withdraw Money</b></h5>
+                        <p>Transfer money to other BELTEI Bank customers</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         <div class="col-12 p-2">
             <div class="box p-3 d-flex gap-3 align-items-center">

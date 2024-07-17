@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../images/banner1.jpg');
+    background-size: cover;
+}
+.back{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    color: white;
+}
+.back a {
+    color: white;
+    font-size: 40px;
+}
+.box{
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
